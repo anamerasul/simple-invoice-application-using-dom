@@ -38,11 +38,11 @@ addProductBtn.addEventListener('click',function(e){
 
        const totalPrice=itempriceValue * itemQuantityValue
 
-        const tr=document.createElement('tr');
-        const th=document.createElement('th');
-        const td1=document.createElement('td');
-        const td2=document.createElement('td');
-        const td3=document.createElement('td');
+        const tr= element('tr');
+        const th=element('th');
+        const td1=element('td');
+        const td2=element('td');
+        const td3=element('td');
 
         td3.classList.add('item-total')
 
@@ -71,9 +71,9 @@ addProductBtn.addEventListener('click',function(e){
         totalCalculation();
 });
 
-// function element(param){
-
-// }
+function element(param){
+return document.createElement(param);
+}
 
 function totalCalculation(){
 
